@@ -1,0 +1,208 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* 
+font-family: 'Fira Sans Condensed', sans-serif;
+font-family: 'Fira Sans Extra Condensed', sans-serif;
+font-family: 'Prompt', sans-serif; 
+*/
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  margin:     0;
+  padding:    0;
+
+}
+
+body{
+    background-color:#842C48;
+}
+
+/* contactar box*/
+#contactar{
+display:grid;
+background-color: #802748;
+
+align-items: center;
+}
+
+/*enviar un mensaje box*/
+#enviarMensaje{
+    display: grid;
+margin:1.5rem;
+height:auto;
+padding: 1.5rem;
+border: solid 0.5rem #802743;
+background-color: #FFB000;
+margin-top:2rem;
+align-items: center;
+text-align: center;
+
+}
+
+#communicate_h2{
+    color:#802743;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    justify-content: center;
+    font-size: 1.7rem;
+    padding:1rem;
+}
+
+#mandanos_h1{
+    color:#EAEAEA;
+   text-shadow: 2px 2px 2px  #FF9B00;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 2.2rem;
+    padding:1rem;
+}
+
+
+#contactForm{
+    display:grid;
+    background-color: #FFB000;
+    width:100%;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.error{
+    visibility: hidden;
+}
+
+
+#errorfirst{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 0.9rem;
+    opacity:0.8;
+   background-color: #802748;
+   padding: 0.2rem;
+    font-weight: 600;
+   visibility: hidden;
+    color: #842C48;
+}
+
+.error1{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+   
+    font-size: 0.9rem;
+    opacity:0.8;
+   background-color: #802748;
+   padding: 0.2rem;
+    font-weight: 600;
+    visibility: true;
+
+    color: #842C48;
+}
+
+
+label{
+    text-align: start;
+    color:#802748;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 1.3rem;
+    margin: 0.4rem 0;
+
+}
+
+input[type=text], input[type=email], textarea{
+    width:98%;
+    background-color: #FF9B00;
+    color:#842C48;
+    opacity: 0.8;
+    border:1px solid #FFB000;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    font-family: 'Prompt', sans-serif; 
+    font-size: 1rem;
+    border-bottom:#802743 2px solid;
+    border:none;
+
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+    xborder:#802743 1px solid;
+    border: 0.1rem solid #f6f6f6;
+    background-color: #ffb900;
+    outline:none;
+}
+    
+
+
+
+input:valid,
+textarea:valid{
+   border: 0.5rem solid #f6f6f6;
+   opacity:0.6;
+
+
+}
+input:invalid,
+textarea:invalid{
+    xbackground-color: #802748;
+    border: 2px solid #802743;
+    opacity:0.5;
+    xborder:0.5px solid #802748;
+    xopacity:0.8;
+}
+.buttonDiv{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding:0.5rem;
+    
+
+}
+.button{
+    background-color: #FF9B00;
+    color:#802743;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #f39135;
+    font-family: 'Prompt', sans-serif; 
+    font-size: 1.3rem;
+    font-weight: 400;
+   text-align: center;
+    padding: 0.4rem;
+    position:relative;
+    cursor: pointer;
+   
+}
+
+button:hover{
+    background-color: #802743;
+    color: #FF9B00;
+}
+.copyrightFooter{
+    padding:1rem;
+    display: flex;
+    text-align: center;
+    flex-direction: row-reverse;
+   
+}
+#copyright{
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    color:#FF9B00;
+    font-size: 0.9rem;
+    
+  
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    #contactForm{
+        width:50vw;
+    }
+  
+    }
+
+    /*big screen*/
+@media only screen and (min-width: 1024px){
+
+  
+    }

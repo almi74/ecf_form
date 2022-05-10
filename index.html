@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Contacto</title>
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <div id="contactar">
+        <h1></h1>
+      </div>
+      <div id="enviarMensaje">
+        <h2 id="communicate_h2">
+          Comunicate con nosotros, estamos aquí para ayudarte
+        </h2>
+        <h1 id="mandanos_h1">Mandanos un mensaje</h1>
+        <form
+        name="formulario"
+        action ="/ecfForm/php/testform.php"
+          id="contactForm"
+          method="POST"
+          value="sendEmail"
+          
+          required>
+        
+          <label for="firstname">tu nombre</label><br />
+          <span id="errorfirst" class ="error"></span><br />
+
+          <input
+            class="field"
+            type="text"
+            name="firstN"
+            id="nombre"
+            placeholder="ej:Diego"
+            minlength="3"
+            maxlength="20"
+            title="minimo 3 letras"
+            pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,20}"
+            required
+          />
+          <br />
+          <label for="familyname">tu apellido o empresa</label><br />
+          <span class="error"></span><br />
+          <input
+            class="field"
+            type="text"
+            name="familyN"
+            id="apellido"
+          
+            placeholder="ej:Maradona"
+            minlength="3"
+            maxlength="20"
+            pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{3,20}"
+            required
+            title="minimo 3 letras"
+          />
+          <br />
+
+          <label for="email">tu correo electrónico </label><br />
+          <span class="error"></span><br />
+          <input
+            class="field"
+            type="email"
+            name="correo"
+            id="email"
+            value=""
+            placeholder="mynombre@micorreo.com"
+            pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+            required
+          />
+          <br />
+          <label for="message"> tus preguntas o comentarios</label><br />
+
+          <textarea
+            class="field"
+            cols="75"
+            rows="5"
+            name="mensaje"
+            id="message"
+            placeholder="Escribe aquí"
+            minlength="3"
+            maxlength="500"
+            pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
+            required
+          ></textarea>
+          <br />
+          <span class="error" >
+            
+            </span
+          >
+          <div class="buttonDiv">
+            <button
+              class="button"
+              id="btnenviar"
+              type="submit"
+              name="submit"
+              value="enviar"
+              id="submit"
+            >
+              Envía tu mensaje
+            </button>
+          </div>
+          <p id="sentMessage"></p>
+          <span id="successMessage"></span>
+        </form>
+        <p id="sentMessage"></p>
+        <span id="successMessage"></span>
+
+        <p style = "color:red" id="errores"> </p>
+      </div>
+    </main>
+    <footer class="copyrightFooter">
+      <p id="copyright">Copyright 2022 ©reddes</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+   
+  </body>
+</html>
